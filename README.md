@@ -25,3 +25,21 @@ Install buttonboard package dependencies
 $ cd buttonboard/
 $ pip3 install -r requirements.txt
 ```
+
+Run Buttonboard
+```
+$ python buttonboard.py
+```
+
+If micboard runs successfully, edit User and WorkingDirectory within buttonboard.service to match your installation and install it as a service.
+
+```
+$ sudo cp micboard.service /etc/systemd/system/
+$ sudo systemctl start buttonboard.service
+$ sudo systemctl enable buttonboard.service
+```
+
+## Configuration
+Within config.json, edit host and port to match the device receiving the OSC commands.
+
+Each button can be configured with separate actions for onPress and onRelease.  For more infromation on what pins to use, check out [pinout.xyz](https://pinout.xyz).

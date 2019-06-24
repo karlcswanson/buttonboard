@@ -31,10 +31,10 @@ Run Buttonboard
 $ python buttonboard.py
 ```
 
-If micboard runs successfully, edit User and WorkingDirectory within buttonboard.service to match your installation and install it as a service.
+If buttonboard runs successfully, edit User and WorkingDirectory within buttonboard.service to match your installation and install it as a service.
 
 ```
-$ sudo cp micboard.service /etc/systemd/system/
+$ sudo cp buttonboard.service /etc/systemd/system/
 $ sudo systemctl start buttonboard.service
 $ sudo systemctl enable buttonboard.service
 ```

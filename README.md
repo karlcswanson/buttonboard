@@ -42,4 +42,4 @@ $ sudo systemctl enable buttonboard.service
 ## Configuration
 Within config.json, edit host and port to match the device receiving the OSC commands.
 
-Each button can be configured with separate actions for onPress and onRelease.  For more infromation on what pins to use, check out [pinout.xyz](https://pinout.xyz).
+Each button can be configured with separate actions for onPress and onRelease.  For more information on what pins to use, check out [pinout.xyz](https://pinout.xyz).

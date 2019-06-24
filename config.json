@@ -1,0 +1,33 @@
+{
+  "host" : "192.168.1.5",
+  "port" : 7401,
+  "heartbeat" : {
+    "path" : "/d3/brightness"
+  },
+  "buttons": [
+	  {
+      "button": 1,
+      "pin": 4,
+      "onPress" : {
+        "path" : "/d3/showcontrol/cue",
+        "value" : 1
+      },
+      "onRelease" : {
+        "path" : "/foo/keyup",
+        "value" : 11
+      }
+	  },
+    {
+      "button": 2,
+      "pin": 5,
+      "onPress" : {
+        "path" : "/d3/showcontrol/cue",
+        "value" : 2
+      },
+      "onRelease" : {
+        "path" : "/foo/keyup",
+        "value" : 22
+      }
+	  }
+  ]
+}

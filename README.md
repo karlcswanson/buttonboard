@@ -9,3 +9,19 @@ Buttonboard is a simple Raspberry Pi based OSC controller for D3 Media Servers.
 
 ## Software
 ### Installation
+Install python3-pip package manager
+```
+$ sudo apt-get update
+$ sudo apt-get install git python3-pip
+```
+
+Download buttonboard
+```
+$ git clone https://github.com/karlcswanson/buttonboard.git
+```
+
+Install buttonboard package dependencies
+```
+$ cd buttonboard/
+$ pip3 install -r requirements.txt
+```

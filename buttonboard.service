@@ -1,0 +1,14 @@
+[Unit]
+Description=Buttonboard Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 -u buttonboard.py
+WorkingDirectory=/home/pi/buttonboard
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
